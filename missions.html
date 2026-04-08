@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Missions</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar glass">
+  <h2>🚀 Missions</h2>
+
+  <div class="search-container">
+    <span id="searchIcon">🔍</span>
+    <input id="search">
+  </div>
+</nav>
+
+<div class="controls">
+  <select id="filter">
+    <option value="all">All</option>
+    <option value="success">Success</option>
+    <option value="fail">Fail</option>
+  </select>
+
+  <select id="typeFilter">
+    <option value="all">All Types</option>
+    <option value="satellite">Satellite</option>
+    <option value="crew">Crew</option>
+    <option value="cargo">Cargo</option>
+    <option value="other">Other</option>
+  </select>
+
+  <select id="sort">
+    <option value="date">Date</option>
+    <option value="name">Name</option>
+  </select>
+</div>
+
+<section id="missions" class="grid"></section>
+
+<div id="toast" class="toast">Added to Favorites ⭐</div>
+
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
